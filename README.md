@@ -1,6 +1,6 @@
 # TechBazaar Gadget Store
 
-TechBazaar is a responsive React storefront for browsing affordable gadgets, searching products, and managing a simple local shopping cart. The app is built with Vite and uses a local JSON file as a mock API source, making it easy to run without a backend server.
+TechBazaar is a responsive React storefront for browsing affordable gadgets, searching products, and managing a simple local shopping cart. The app is built with Vite and uses a local JSON file as a mock API source provided, making it easy to run without a backend server.
 
 ## Overview
 
