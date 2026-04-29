@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">iPhone 12 placeholder</title>
+  <desc id="desc">Illustrated placeholder image for iPhone 12.</desc>
+  <rect width="600" height="600" rx="48" fill="#eef3ff"/>
+  <rect x="190" y="90" width="220" height="420" rx="42" fill="#172236"/>
+  <rect x="208" y="120" width="184" height="364" rx="30" fill="#dbe8ff"/>
+  <rect x="270" y="105" width="60" height="10" rx="5" fill="#46556d"/>
+  <circle cx="300" cy="450" r="54" fill="#a9c3ff"/>
+  <circle cx="300" cy="450" r="28" fill="#ffffff"/>
+  <text x="300" y="545" text-anchor="middle" fill="#172236" font-family="Arial, sans-serif" font-size="36" font-weight="700">
+    iPhone 12
+  </text>
+</svg>

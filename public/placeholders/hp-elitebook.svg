@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">HP EliteBook placeholder</title>
+  <desc id="desc">Illustrated placeholder image for HP EliteBook 840.</desc>
+  <rect width="600" height="600" rx="48" fill="#f5efe6"/>
+  <rect x="95" y="120" width="410" height="255" rx="24" fill="#233554"/>
+  <rect x="120" y="145" width="360" height="205" rx="16" fill="#dfe7f2"/>
+  <rect x="70" y="390" width="460" height="30" rx="15" fill="#9aa8bc"/>
+  <rect x="180" y="430" width="240" height="18" rx="9" fill="#7c8ca4"/>
+  <text x="300" y="505" text-anchor="middle" fill="#233554" font-family="Arial, sans-serif" font-size="34" font-weight="700">
+    HP EliteBook 840
+  </text>
+</svg>
