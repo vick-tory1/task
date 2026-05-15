@@ -499,7 +499,7 @@ function App() {
           </div>
 
           <span className="footer-signoff">
-          Copyright &copy; {footerHearts} | Love  Adams
+          Copyright &copy; {footerHearts} | Adams Celestina Ekpe
           </span>
         </div>
       </footer>
