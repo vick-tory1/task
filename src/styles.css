@@ -167,6 +167,10 @@ button {
     border-color 160ms ease;
 }
 
+.nav-menu-toggle {
+  display: none;
+}
+
 .section-label,
 .eyebrow {
   margin: 0;
@@ -848,6 +852,61 @@ button:focus-visible {
   .about-grid,
   .product-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 699px) {
+  .site-header-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.65rem;
+  }
+
+  .nav-menu-toggle {
+    display: flex;
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    border: 1px solid rgba(24, 34, 54, 0.12);
+    border-radius: 0.85rem;
+    background: rgba(255, 255, 255, 0.86);
+    box-shadow: 0 6px 18px rgba(17, 24, 39, 0.04);
+    color: #182236;
+  }
+
+  .nav-menu-toggle span {
+    display: block;
+    width: 1.2rem;
+    height: 2px;
+    border-radius: 999px;
+    background: currentColor;
+    transition: transform 160ms ease, opacity 160ms ease;
+  }
+
+  .nav-menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(0.4rem) rotate(45deg);
+  }
+
+  .nav-menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .nav-menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-0.4rem) rotate(-45deg);
+  }
+
+  .site-nav {
+    display: none;
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+    padding: 0.25rem 0 0.5rem;
+  }
+
+  .site-header-inner.nav-open .site-nav {
+    display: grid;
   }
 }
 

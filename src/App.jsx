@@ -114,6 +114,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
+  const [navOpen, setNavOpen] = useState(false);
   const searchInputRef = useRef(null);
 
   const normalizedSearch = searchTerm.toLowerCase().trim();
@@ -212,18 +213,31 @@ function App() {
       </a>
 
       <header className="site-header">
-        <div className="page-shell site-header-inner">
+        <div className={`page-shell site-header-inner${navOpen ? " nav-open" : ""}`}>
           <a className="brand-block" href="#home">
             <span className="eyebrow">Your Trusted Gadget Store</span>
             <span className="brand-name">TechBazaar</span>
           </a>
 
-          <nav className="site-nav" aria-label="Primary">
-            <a href="#home">Home</a>
-            <a href="#search">Search</a>
-            <a href="#about">About</a>
-            <a href="#products">Gadgets</a>
-            <a href="#cart-summary">Cart</a>
+          <button
+            className="nav-menu-toggle"
+            type="button"
+            aria-controls="site-navigation-links"
+            aria-expanded={navOpen}
+            aria-label={navOpen ? "Close navigation menu" : "Open navigation menu"}
+            onClick={() => setNavOpen((open) => !open)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+
+          <nav className="site-nav" id="site-navigation-links" aria-label="Primary">
+            <a href="#home" onClick={() => setNavOpen(false)}>Home</a>
+            <a href="#search" onClick={() => setNavOpen(false)}>Search</a>
+            <a href="#about" onClick={() => setNavOpen(false)}>About</a>
+            <a href="#products" onClick={() => setNavOpen(false)}>Gadgets</a>
+            <a href="#cart-summary" onClick={() => setNavOpen(false)}>Cart</a>
           </nav>
         </div>
       </header>
@@ -499,7 +513,7 @@ function App() {
           </div>
 
           <span className="footer-signoff">
-          Copyright &copy; {footerHearts} | Adams Celestina Ekpe
+          Copyright &copy; {footerHearts} | <span title="Hi, I’m Adams Celestina Ekpe, (YHWH’s Chosen) a multidisciplinary technology professional, full-stack web developer with a front-end focus, certified graphic and multimedia designer, cybersecurity practitioner, and DevOps enthusiast. I specialize in building responsive, user-centered digital experiences using modern web technologies, API integrations, and deployment workflows. Passionate about AI, emerging technologies, cybersecurity, automation, and cloud infrastructure, I bridge creativity, engineering, and innovation to build intelligent digital solutions for the future." tabIndex={0}>Adams Celestina Ekpe</span>
           </span>
         </div>
       </footer>
